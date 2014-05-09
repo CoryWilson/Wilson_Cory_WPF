@@ -118,4 +118,20 @@ var length = 7;
 var width = 6;
 var perimeter = (length*2) + (width*2);
 console.log(perimeter);
+console.log("The perimeter of a rectangle with a length of "+ length +" and a width of "+width+ " is "+perimeter+".");
 
+// Concatenating - combining strings of text together
+
+var firstName = "Kermit";
+var lastName = "The Frog";
+
+// Combine the first and last name into a full name
+
+var fullName = firstName + " " + lastName;
+console.log(fullName);
+
+var d = "6";
+var e = "7";
+
+var combine = d+e;
+console.log(combine);
