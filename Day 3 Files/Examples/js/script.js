@@ -59,3 +59,24 @@ a-=3; // a = a-3
 a/=2; // a = a/2
 a*=6; // a = a*6
 console.log(a);
+
+// Strings
+// " o ' used to find the beginning and end of a string
+// Needed to distinguish between variable names and normal text
+
+var kermit = "light green";
+
+var frogName = "kermit";
+
+// Double or Single quotes?
+// Can use either BUT MUST match!
+
+var courseName = 'Web Programming Fundamentals';
+
+//var phrase = 'I don't know (Doesn't Work)
+
+//Escaping character ( \Backslash)
+var phrase = 'I don\'t know. \n New Line starts here.';
+console.log(phrase);
+
+// \n - new line character
