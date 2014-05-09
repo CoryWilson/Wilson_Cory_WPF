@@ -8,9 +8,11 @@ Day 3 Class Examples
 
 // Find out how old we are
 // Create a variable for birth year
+
 var birthYear = 1990;
 
 // Create a variable to hold the age
+
 var age = 2014 - birthYear;
 console.log(age);
 
@@ -38,3 +40,22 @@ console.log(remainder);
 var evenOrOdd = 247643%2;
 console.log(evenOrOdd);
 
+// Assignment Operators
+/*
+= Assignment
+++ Adds 1 to the variable
+-- Subtracts 1 from the variable
++= Addition Assignment
+-= Subtract Assignment
+/= Division Assignment
+*= Multiplication Assignment
+ */
+
+var a = 1;
+a++; // a = a+1
+a--; // a = a-1
+a+=4; // a = a+4
+a-=3; // a = a-3
+a/=2; // a = a/2
+a*=6; // a = a*6
+console.log(a);
