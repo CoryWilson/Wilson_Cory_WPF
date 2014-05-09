@@ -80,3 +80,17 @@ var phrase = 'I don\'t know. \n New Line starts here.';
 console.log(phrase);
 
 // \n - new line character
+
+//Boolean
+// true or false
+// NOT the text value of it!
+// MUST be lowercase
+
+var yes = true;
+
+//Not Boolean just text
+var maybe = "true";
+
+
+var no = false;
+
