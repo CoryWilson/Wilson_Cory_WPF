@@ -14,3 +14,12 @@ Day 4 Expressions Assignment - Personal
 //Average MPG of Car
 //Mileage of Commute
 //Amount of times travelled
+
+var mpg = prompt("Enter the average MPG of your Car:");
+console.log(mpg);
+
+var commuteMileage = prompt("Enter the mileage of your daily commute:");
+console.log(commuteMileage);
+
+var timesTravelled = prompt("Enter the number of times you commute during a month's time:");
+console.log(timesTravelled);
