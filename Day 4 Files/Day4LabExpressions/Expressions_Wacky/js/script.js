@@ -32,7 +32,7 @@ var houseArray = [house1, house2, house3];
 console.log(houseArray);
 
 //Wait time for all of the houses
-var houseTotal = Number(house1) + Number(house2) + Number(house3);
+var houseTotal = Number(houseArray[0]) + Number(houseArray[1]) + Number(houseArray[2]);
 console.log(houseTotal);
 
 //Amount of Houses you can go through
@@ -40,4 +40,4 @@ var houseVisits = Number(minsLeft) / houseTotal;
 console.log(houseVisits);
 
 //Console Log out detailed answer
-console.log("");
+console.log("You have " + minsLeft + " minutes until the park closes. The wait time for the haunted houses are " + houseArray + " minutes. You can make it through " + houseVisits + " haunted houses before the park closes.");
