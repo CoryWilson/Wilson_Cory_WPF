@@ -9,7 +9,7 @@ Day 5 Examples
 
 //If a child is tall enough, print to the console that he can ride a roller coaster
 
-var tallEnough = true;
+//var tallEnough = true;
 
 /*
 if(thing to evaluate){
@@ -17,6 +17,7 @@ if(thing to evaluate){
 }
 */
 
+/*
 if(tallEnough) {
   //Code will run if the kid is tall enough
   console.log("You can ride the roller coaster!");
@@ -24,6 +25,24 @@ if(tallEnough) {
 else {
   //Code will run if the kid is NOT tall enough
   console.log("Sorry kid, you are not tall enough. :(");
+}
+*/
+
+//Relational Expressions
+
+//If a child is not over 48" tall, then he can't ride
+
+var kidHeight = 50;
+
+var minHeight = 48;
+
+if(kidHeight >= minHeight){
+  //Code will run if the kid is tall enough
+  console.log("Yeah, hop on dawg.");
+}
+  //Code will run if the kid is NOT tall enough
+else{
+  console.log("You're not tall enough brah...");
 }
 
 console.log("What comes after?");
