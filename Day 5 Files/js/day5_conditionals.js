@@ -21,5 +21,9 @@ if(tallEnough) {
   //Code will run if the kid is tall enough
   console.log("You can ride the roller coaster!");
 }
+else {
+  //Code will run if the kid is NOT tall enough
+  console.log("Sorry kid, you are not tall enough. :(");
+}
 
 console.log("What comes after?");
