@@ -32,11 +32,13 @@ else {
 
 //If a child is not over 48" tall, then he can't ride
 
-var kidHeight = 50;
+var kidHeight = 46;
 
 var minHeight = 48;
 
-if(kidHeight >= minHeight){
+var sneakerLift = 2;
+
+if(kidHeight + sneakerLift >= minHeight){
   //Code will run if the kid is tall enough
   console.log("Yeah, hop on dawg.");
 }
