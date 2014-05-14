@@ -23,3 +23,21 @@ if(iPadPrice <= budget && paycheck > 600){
 else{
   console.log("No iPad for you sucka!");
 }
+
+
+//Can we buy a car?
+//If the price of the car is less than our budget - buy the car!
+//OR if you win the lottery - then buy a car
+
+var carPrice = 35000;
+var carBudget = 12000;
+var winLottery = true;
+
+// OR || - one or more of the pair must be true to be true
+
+if(carPrice < carBudget || winLottery){ //winLottery === true
+  console.log("Have fun in your new car!");
+}
+else{
+  console.log("No car for you bitch!");
+}
