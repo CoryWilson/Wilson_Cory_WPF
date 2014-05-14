@@ -7,34 +7,42 @@ Day 4 Expressions Assignment - Industry
 
 //Industry Example
 
-//How can I tell if a text editor is worth using?
-//If it has all three of these then it works.
+//How much do you make average from the different types of work during the course of one week?
 
 //Givens:
-//Does it edit text?
-//Does it autocomplete text?
-//Does it color code text to make coding easier to decipher?
+//Freelance Website Design @ $20/hr
+//Legacy Code Maintenance @ $40/hr
+//Application Design @ $50/hr
 
-//Ask the user the name of the program.
-var name = prompt("What is the name of the Text Editor you have selected?");
-console.log(name);
+//Ask about Freelance Website Design hours
+var webDesignHrs = prompt("How many hours did you work performing Freelance Website Design/Development at $20/hr in one week's time?");
+//Convert from string to number
+Number(webDesignHrs);
 
-//Ask the user if the program edits text property
-var textEdit = prompt("Does the Text Editor you have selected successfully edit text? True or False?");
-console.log(textEdit);
+//Ask about Legacy Code Maintenance hours
+var codeMaintenanceHrs = prompt("How many hours did you spend performing Legacy Code Maintenance at $40/hr? in one week's time");
+//Convert from string to number
+Number(codeMaintenanceHrs);
 
-//Ask the user to input the whether or not the program auto completes text.
-var autoComplete = prompt("Does the Text Editor auto complete text? True or False?");
-console.log(autoComplete);
+//Ask about Application Design hours
+var appDesignHrs = prompt("How many hours did you spend designing new Web Applications at $50/hr? in one week's time");
+//Convert from string to number
+Number(appDesignHrs);
 
-//Ask the user if the program color codes text.
-var colorCode = prompt("Does the Text Editor color code text? True or False?");
-console.log(colorCode);
+//Pay Rates for each respective type of work
+var webDesignRate = 20;
+var codeMaintenanceRate = 40;
+var appDesignRate = 50;
 
+//Total Income earned from each respective type of work
+var webDesignTotal = webDesignHrs * webDesignRate;
+var codeMaintenanceTotal = codeMaintenanceHrs * codeMaintenanceRate;
+var appDesignTotal = appDesignHrs * appDesignRate;
 
-if((Boolean(textEdit) === true) && (Boolean(autoComplete) === true) && (Boolean(colorCode) === true)){
-  console.log(name + " is worth using");
-}
-else{
-  console.log("Don't bother using " + name + " it is pretty terrible.");
-}
+//Total Income earned from all types of work
+var averageTotal = webDesignTotal + codeMaintenanceTotal + appDesignTotal;
+
+//Average Income of all three types of work combined
+var averagePR = averageTotal/3;
+
+console.log("In a week, you make a total of $" + averageTotal + ". And you make an average of $" + averagePR + " combined between the three different types of work in a week's time.");
