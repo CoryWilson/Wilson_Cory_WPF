@@ -6,3 +6,5 @@ Day 6 Conditionals Assignment - Wacky
 ***************************************/
 
 //Wacky Example
+
+//You told us not to worry about validation :P
