@@ -7,16 +7,19 @@ Day 6 Conditionals Assignment - Industry
 
 //Industry Example
 
-//You told us not to worry about validation :P
+//Determine which text editor is the best option for you?
 
-//Which text editor should you use?
+//You told us not to worry about validation :P
 
 //Givens:
 //Does it support basic text editing?
+var textEdit = Boolean(prompt());
+//Does it cost money?
+var cost = Boolean(prompt());
+//Does it autocomplete text?
 var autoComplete = Boolean(prompt("Does the text editor allow for autocompletion of text?"));
 //Is it customizable?
 var custom = Boolean(prompt("Does the text editor allow for customization of the program?"));
-
 
 //If the program has both autoComplete and custom it is a success
 if(autoComplete  && custom ){
