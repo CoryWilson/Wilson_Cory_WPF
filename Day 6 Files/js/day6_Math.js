@@ -6,12 +6,9 @@ Day 6 Examples
 Math Class
 ***************************************/
 
-//Math.ceil(num); Rounds up to the next integer
-//Math.floor(num); Rounds down to the next integer
 //Math.random();
 
-//Always capitalize the M in Math.
-
+//ALWAYS capitalize the M in Math.
 
 //Math.round()
 //round
@@ -33,3 +30,25 @@ console.log(Math.floor(num2));
 var num3 = 4.23;
 console.log(num3);
 console.log(Math.ceil(num3));
+
+//Math.random()
+//Random Numbers
+//Gives a random number between 0 -> 1
+var num4 = Math.random();
+console.log(num4);
+
+//random number between 0 -> 10
+var num5 = Math.random() * 10;
+console.log(num5);
+
+//random integer between 0 -> 100
+var num6 = Math.round(Math.random() * 100);
+console.log(num6);
+
+//Get a random integer between two numbers
+//Math.random() * (max-min) + min
+// [0->1] * range + min
+
+//integer between 50 -> 80
+var num7 = Math.round(Math.random() * (30) + 50);
+console.log(num7);
