@@ -35,4 +35,3 @@ else if(gokuLevel > vegetaLevel){
 else{
   console.log("Your power level of " + gokuLevel + " is much to weak for my power level of " + vegetaLevel + " kakarot.");
 }
-*/
