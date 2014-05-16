@@ -14,34 +14,18 @@ Day 6 Conditionals Assignment - Industry
 //Givens:
 //Does it support basic text editing?
 var textEdit = prompt("Does the text editor allow for basic text editing? True or False?");
-//Does it cost money?
-var cost = prompt("Does the text editor cost money? True or False?");
-//Does it autocomplete text?
-//var autoComplete = prompt("Does the text editor allow for autocompletion of text? True or False?");
 //Is it customizable?
-//var custom = prompt("Does the text editor allow for customization of the program? True or False?");
+var custom = prompt("Does the text editor allow for customization of the program? True or False?");
 
-if(textEdit === "true" && cost === "true"){
-  console.log("Good Shit");
+//If both textEdit and custom are true then print this
+if(textEdit === "true" && custom === "true"){
+  console.log("This browser has both basic text editing capability and is fully functional. You should use it!");
 }
-else if(textEdit === "true" || cost === "true"){
+//Else if textEdit or custom are true then print this
+else if(textEdit === "true" || custom === "true"){
   console.log("This is a decent text editor. It may be missing some necessary features.");
 }
+//Else print this
 else{
-  console.log("no bueno");
+  console.log("Don't bother using this text editor.");
 }
-
-/*
-//If the program has both autoComplete and custom it is a success
-if(autoComplete  && custom ){
-  console.log("This is a great text editor, it has all the necessary features.");
-}
-//If it has only one of autoComplete or custom it is an ok option
-else if(autoComplete || custom ){
-  console.log("This is a decent text editor. It may be missing some necessary features.");
-}
-//If it has neither don't bother using it
-else{
-  console.log("Don't waste your time. This is a poor text editor.");
-}
-*/
