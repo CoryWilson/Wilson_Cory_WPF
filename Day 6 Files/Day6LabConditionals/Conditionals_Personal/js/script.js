@@ -23,12 +23,15 @@ Day 6 Conditionals Assignment - Personal
 var coursePar = Number(prompt("What is the par for the golf course?"));
 var scoreShot = Number(prompt("What did you shoot for your round today?"));
 
+//If you shoot below par, then you have succeeded
 if(scoreShot < coursePar){
-  console.log("Congrats! You have broken par! Excellent round.");
+  console.log("Congrats! Par for the golf course was " + coursePar +" and you have shot " + scoreShot + ". Excellent round.");
 }
-else if(scoreShot = coursePar){
-  console.log("Almost, you shot par. Still an great round.");
+//If you shoot par, then you have played well
+else if(scoreShot === coursePar){
+  console.log("You shot " + scoreShot + ", and par for the course is " + coursePar + ". Still a great round.");
 }
+//If you shoot over par, you have some work to do
 else{
-  console.log("Sorry, you shot over par. Go practice some more.");
+  console.log("Sorry, you shot " + scoreShot + ", which is over par. Par for the course was " + coursePar + ". Go practice some more.");
 }
