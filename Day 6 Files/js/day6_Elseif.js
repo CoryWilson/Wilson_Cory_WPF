@@ -3,6 +3,7 @@ Cory Wilson
 WPF Section 1
 05/16/14
 Day 6 Examples
+Else If Statements
 ***************************************/
 
 //Testing Steak Temperatures
