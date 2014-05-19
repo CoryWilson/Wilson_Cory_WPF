@@ -23,4 +23,4 @@ while(counter < num){
   console.log(counter);
   counter++;
 }
-console.log(counter);
+console.log("Congrats, you've counted all the way up to "+counter+"!");

@@ -2,7 +2,7 @@
 Cory Wilson
 WPF Section 1
 05/19/14
-Day 7 For Loops
+Day 7 Do While Loops
 ***************************************/
 
 //Initialized Variables
