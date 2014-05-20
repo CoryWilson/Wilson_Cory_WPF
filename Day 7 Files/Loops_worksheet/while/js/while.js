@@ -9,7 +9,8 @@ Day 7 While Loops
 
 //Initialize a Counter
 alert("We're going to count up to any number you want to.");
-var counter = 0;
+
+var i = 0;
 var num = Number(prompt("Put a number you would like to count up to in here..."));
 
 //Validate prompt
@@ -19,8 +20,8 @@ while(isNaN(num) || num===""){
 }
 
 //Setup a while loop
-while(counter < num){
-  console.log(counter);
-  counter++;
+while(i < num){
+  console.log(i);
+  i++;
 }
-console.log("Congrats, you've counted all the way up to "+counter+"!");
+console.log("Congrats, you've counted all the way up to "+i+"!");
