@@ -47,6 +47,9 @@ Stung!
 
 // numOfStings = weight / 8.666666667
 var stingsPerPound = 8.666666667;
+
+//alert the user as to what we are doing, aka finding the amount of bee stings it will take to kill an animal
+alert("How many bee stings are needed to kill an animal?");
 //function that tells you number of bee stings it takes to kill an animal
 //parameter of victim's weight (in lbs)
 function beeStings(weight){
