@@ -57,6 +57,11 @@ function beeStings(weight){
 }
 //ask the user how much the animal weighs
 var stingInput = Number(prompt("How much does the animal weigh?"));
+//Validate the prompt to make sure the user input a number
+while(isNaN(stingInput) || stingInput===""){
+  //Its a text string, prompt again for a number
+  stingInput = Number(prompt("Please type in a NUMBER for radius!"));
+}
 
-var stingResult = beeStings(150);
+var stingResult = beeStings(stingInput);
 console.log("It takes "+stingResult+" bee stings to kill this animal.");
