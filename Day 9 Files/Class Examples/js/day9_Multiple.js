@@ -12,6 +12,7 @@ while(isNaN(width) || width===""){
   //Its a text string, prompt again for a number
   width = Number(prompt("Please type in a NUMBER for width!"));
 }
+
 var height = Number(prompt("What is the height of the rectangle?"));
 //Validate the prompt
 while(isNaN(height) || height===""){
