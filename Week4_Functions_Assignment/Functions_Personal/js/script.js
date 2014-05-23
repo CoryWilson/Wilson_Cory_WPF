@@ -44,8 +44,13 @@ var result = concert(weeklyBudget,ticketCost);
 console.log(result);
 
 //finally compare the returned value of the concert function and make sure that you have more than $50 left over between the budget and concert
+/*
 if(result > 50){
   console.log("Congratulations your budget is $"+weeklyBudget+" and the ticket to the concert costs $"+ticketCost+". That means have $"+result+" left over and you can go to a concert this week!");
 } else{
   console.log("Your budget was $"+weeklyBudget+" and the ticket cost $"+ticketCost+". That means you only have $"+result+" leftover. You don't have enough money to attend a concert this week. :( ");
 }
+*/
+
+//Turn this result into a TERNARY instead of an if else
+(result > 2.0) ? console.log("Congratulations your budget is $"+weeklyBudget+" and the ticket to the concert costs $"+ticketCost+". That means have $"+result+" left over and you can go to a concert this week!") : console.log("Your budget was $"+weeklyBudget+" and the ticket cost $"+ticketCost+". That means you only have $"+result+" leftover. You don't have enough money to attend a concert this week. :( ");
