@@ -8,7 +8,6 @@ Day 9 Random Numbers
 //Create a function that will give a random integer
 
 function randomizer(mn,mx){ //Use Parameters
-
   //Generate a random integer and RETURN it back
 
   //Create a variable to hold our random integer
@@ -16,7 +15,6 @@ function randomizer(mn,mx){ //Use Parameters
 
   //Return the random integer
   return randomNum;
-
 }
 
 //Ask user for min & max values
@@ -30,3 +28,12 @@ var result = randomizer(minUser,maxUser); //NEED arguments
 
 //Console log it out
 console.log(result);
+
+//Create a loop to gie us 15 random integers
+for(var i=0; i<15; i++){
+  //Create a random Integer
+  //console.log(result); DOES NOT WORK
+
+  //Must function call to start the function
+  console.log(randomizer(minUser,maxUser));
+}
