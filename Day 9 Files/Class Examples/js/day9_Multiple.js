@@ -13,12 +13,18 @@ while(isNaN(width) || width===""){
   width = Number(prompt("Please type in a NUMBER for width!"));
 }
 
+/*
 var height = Number(prompt("What is the height of the rectangle?"));
 //Validate the prompt
 while(isNaN(height) || height===""){
   //Its a text string, prompt again for a number
   height = Number(prompt("Please type in a NUMBER for height!"));
 }
+*/
+
+do{
+  var height = prompt("What is the height of the rectangle?");
+} while(isNaN(height) || height === "");
 
 //Create a function to call the area
 var area = areaRect(width,height);
