@@ -22,7 +22,7 @@ while(isNaN(weeklyBudget) || weeklyBudget===""){
 }
 
 //Then ask the user how much the ticket costs
-var ticketCost = Number(prompt("How large is your budget this week?"));
+var ticketCost = Number(prompt("How much does the concert ticket cost?"));
 //Validate the prompt
 while(isNaN(ticketCost) || ticketCost===""){
   //Ask the user to insert a number if they input something else
@@ -45,7 +45,7 @@ console.log(result);
 
 //finally compare the returned value of the concert function and make sure that you have more than $50 left over between the budget and concert
 if(result > 50){
-  console.log("Congratulations your budget is $"+weeklyBudget+" and the ticket to the concert costs $"+ticketCost+". That means you can go to the concert this week!");
+  console.log("Congratulations your budget is $"+weeklyBudget+" and the ticket to the concert costs $"+ticketCost+". That means have $"+result+" left over and you can go to a concert this week!");
 } else{
-  console.log("You don't have enough money. Try again next week. :(");
+  console.log("Your budget was $"+weeklyBudget+" and the ticket cost $"+ticketCost+". That means you only have $"+result+" leftover. You don't have enough money to attend a concert this week. :( ");
 }
