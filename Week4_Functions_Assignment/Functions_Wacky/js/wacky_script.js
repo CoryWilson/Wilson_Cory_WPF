@@ -179,4 +179,4 @@ var teamNamesArray = [teamOneArray[0], teamTwoArray[0], teamThreeArray[0], teamF
 
 //find the team with the most points by finding the max value in the array.
 var groupWinner = Math.max.apply(Math,teamResultsArray);
-console.log(groupWinner);
+console.log("The team that won the group ended up with "+groupWinner+" points.");
