@@ -77,8 +77,11 @@ if(team1 === "win"){
 teamOnePoints += points;
 
 }
+
 //call out total points value and team name points value
 console.log(team1Name+" finished the group stage with a total of "+teamOnePoints+" points.");
+
+
 
 /********
 Team Two!
