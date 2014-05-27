@@ -47,6 +47,3 @@ var conference = function(a,b,c){
 //use userInputs for arguments in the conference function
 var result = conference(userInput1,userInput2,userInput3);
 console.log(result);
-
-
-//conditional operator other than strictly equals
