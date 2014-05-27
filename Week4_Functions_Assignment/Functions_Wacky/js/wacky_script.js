@@ -35,21 +35,21 @@ alert("Let's figure out how the group stage of the world cup ended up.");
 //team enters draw -> pull draw function -> adds to total
 //team enters loss -> pull loss function -> adds to total
 
-var team1Name = prompt("What country is the first team?");
-while(team1Name===""){
-  var team1Name = prompt("Make sure to enter a team name!");
+var teamOneName = prompt("What country is the first team?");
+while(teamOneName===""){
+  var teamOneName = prompt("Make sure to enter a team name!");
 }
-var team2Name = prompt("What country is the second team?");
-while(team2Name===""){
-  var team2Name = prompt("Make sure to enter a team name!");
+var teamTwoName = prompt("What country is the second team?");
+while(teamTwoName===""){
+  var teamTwoName = prompt("Make sure to enter a team name!");
 }
-var team3Name = prompt("What country is the third team?");
-while(team3Name===""){
-  var team3Name = prompt("Make sure to enter a team name!");
+var teamThreeName = prompt("What country is the third team?");
+while(teamThreeName===""){
+  var teamThreeName = prompt("Make sure to enter a team name!");
 }
-var team4Name = prompt("What country is the fourth team?");
-while(team4Name===""){
-  var team4Name = prompt("Make sure to enter a team name!");
+var teamFourName = prompt("What country is the fourth team?");
+while(teamFourName===""){
+  var teamFourName = prompt("Make sure to enter a team name!");
 }
 
 
@@ -60,15 +60,15 @@ var teamOnePoints = 0;
 //Loop that runs 3 times, asking once for each individal match played by the team.
 for(var i = 0; i < 3; i++){
 
-var team1 = prompt("Did team "+team1Name+" win, draw, or lose the match?");
-while(team1===""){
-  var team1 = prompt("Make sure to enter a result!");
+var teamOne = prompt("Did team "+teamOneName+" win, draw, or lose the match?");
+while(teamOne===""){
+  var teamOne = prompt("Make sure to enter a result!");
 }
 //compare results to win, draw, or loss
 //provide corresponding points value through use of function call
-if(team1 === "win"){
+if(teamOne === "win"){
   var points = win();
-}  else if(team1 === "draw"){
+}  else if(teamOne === "draw"){
   var points = draw();
 }  else{
   var points = loss();
@@ -78,10 +78,10 @@ teamOnePoints += points;
 
 }
 
+var teamOneArray = [teamOneName, teamOnePoints];
+
 //call out total points value and team name points value
-console.log(team1Name+" finished the group stage with a total of "+teamOnePoints+" points.");
-
-
+console.log(teamOneArray[0]+" finished the group stage with a total of "+teamOneArray[1]+" points.");
 
 /********
 Team Two!
@@ -90,15 +90,15 @@ var teamTwoPoints = 0;
 //Loop that runs 3 times, asking once for each individal match played by the team.
 for(var j = 0; j < 3; j++){
 
-var team2 = prompt("Did team "+team2Name+" win, draw, or lose the match?");
-while(team2===""){
-  var team2 = prompt("Make sure to enter a result!");
+var teamTwo = prompt("Did team "+teamTwoName+" win, draw, or lose the match?");
+while(teamTwo===""){
+  var teamTwo = prompt("Make sure to enter a result!");
 }
 //compare results to win, draw, or loss
 //provide corresponding points value through use of function call
-if(team2 === "win"){
+if(teamTwo === "win"){
   var points = win();
-}  else if(team2 === "draw"){
+}  else if(teamTwo === "draw"){
   var points = draw();
 }  else{
   var points = loss();
@@ -107,8 +107,11 @@ if(team2 === "win"){
 teamTwoPoints += points;
 
 }
+
+var teamTwoArray = [teamTwoName, teamTwoPoints];
+
 //call out total points value and team name points value
-console.log(team2Name+" finished the group stage with a total of "+teamTwoPoints+" points.");
+console.log(teamTwoArray[0]+" finished the group stage with a total of "+teamTwoArray[1]+" points.");
 /**********
 Team Three!
 **********/
@@ -117,15 +120,15 @@ var teamThreePoints = 0;
 //Loop that runs 3 times, asking once for each individal match played by the team.
 for(var l = 0; l < 3; l++){
 
-var team3 = prompt("Did team "+team3Name+"  win, draw, or lose the match?");
-while(team3===""){
-  var team3 = prompt("Make sure to enter a result!");
+var teamThree = prompt("Did team "+teamThreeName+"  win, draw, or lose the match?");
+while(teamThree===""){
+  var teamThree = prompt("Make sure to enter a result!");
 }
 //compare results to win, draw, or loss
 //provide corresponding points value through use of function call
-if(team3 === "win"){
+if(teamThree === "win"){
   var points = win();
-}  else if(team3 === "draw"){
+}  else if(teamThree === "draw"){
   var points = draw();
 }  else{
   var points = loss();
@@ -134,8 +137,11 @@ if(team3 === "win"){
 teamThreePoints += points;
 
 }
+
+var teamThreeArray = [teamThreeName, teamThreePoints];
+
 //call out total points value and team name points value
-console.log(team3Name+" finished the group stage with a total of "+teamThreePoints+" points.");
+console.log(teamThreeArray[0]+" finished the group stage with a total of "+teamThreeArray[1]+" points.");
 /*********
 Team Four!
 *********/
@@ -144,15 +150,15 @@ var teamFourPoints = 0;
 //Loop that runs 3 times, asking once for each individal match played by the team.
 for(var k = 0; k < 3; k++){
 
-var team4 = prompt("Did team "+team4Name+" win, draw, or lose the match?");
-while(team4===""){
-  var team4 = prompt("Make sure to enter a result!");
+var teamFour = prompt("Did team "+teamFourName+" win, draw, or lose the match?");
+while(teamFour===""){
+  var teamFour = prompt("Make sure to enter a result!");
 }
 //compare results to win, draw, or loss
 //provide corresponding points value through use of function call
-if(team4 === "win"){
+if(teamFour === "win"){
   var points = win();
-}  else if(team4 === "draw"){
+}  else if(teamFour === "draw"){
   var points = draw();
 }  else{
   var points = loss();
@@ -161,11 +167,16 @@ if(team4 === "win"){
 teamFourPoints += points;
 
 }
-//call out total points value and team name points value
-console.log(team4Name+" finished the group stage with a total of "+teamFourPoints+" points.");
 
-//store results in an array so they can be compared
-var teamResultsArray = [teamOnePoints, teamTwoPoints, teamThreePoints, teamFourPoints];
+var teamFourArray = [teamFourName, teamFourPoints];
+
+//call out total points value and team name points value
+console.log(teamFourArray[0]+" finished the group stage with a total of "+teamFourArray[1]+" points.");
+
+var teamResultsArray = [teamOneArray[1], teamTwoArray[1], teamThreeArray[1], teamFourArray[1]];
+var teamNamesArray = [teamOneArray[0], teamTwoArray[0], teamThreeArray[0], teamFourArray[0]];
+
+
 //find the team with the most points by finding the max value in the array.
 var groupWinner = Math.max.apply(Math,teamResultsArray);
-console.log("The team that won the group stage ended up with "+groupWinner+ " points.");
+console.log(groupWinner);
