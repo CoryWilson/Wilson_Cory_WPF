@@ -22,3 +22,5 @@ var function1 = function(a,b,c){
 var function2 = function(){
 
 }
+
+//conditional operator other than strictly equals

@@ -17,7 +17,8 @@ Functions Assignment - Wacky
 
 //3 matches, so we need 3 prompts
 //validate each prompt
-/*var match1 = prompt("Did the team win, draw, or lose match one?");
+/*
+var match1 = prompt("Did the team win, draw, or lose match one?");
 while(match1===""){
   var match1 = prompt("Make sure to enter a result!");
 }
@@ -30,88 +31,119 @@ while(match3===""){
   var match3 = prompt("Make sure to enter a result!");
 }
 */
-
 //team enters win -> pull win function -> adds to total
 //team enters draw -> pull draw function -> adds to total
 //team enters loss -> pull loss function -> adds to total
-
-//function that returns the points for a win
-var win = function(result){
-  var points = "win";
-  points = 3;
-  return points;
+var team1Name = prompt("What country is the first team?");
+while(team1Name===""){
+  var team1Name = prompt("Make sure to enter a team name!");
 }
-//function that returns the points for a draw
-var draw = function(result){
-  var points = "draw";
-  points = 1;
-  return points;
+var team2Name = prompt("What country is the second team?");
+while(team2Name===""){
+  var team2Name = prompt("Make sure to enter a team name!");
 }
-//function that returns points for a loss
-var loss = function(result){
-   var points = "loss";
-   points = 0;
-   return points;
+var team3Name = prompt("What country is the third team?");
+while(team3Name===""){
+  var team3Name = prompt("Make sure to enter a team name!");
+}
+var team2Name = prompt("What country is the fourth team?");
+while(team2Name===""){
+  var team2Name = prompt("Make sure to enter a team name!");
 }
 
-/*
-function result(match){
 
-  if(match==="win"){
-    var points = 3;
-  } else if(match==="draw"){
-    var points = 1;
-  } else{
-    var points = 0;
-  }
-  return points;
-}
-*/
-for(var i=0; i<3; i++){
-  var match = prompt("Did the team win, draw, or lose match one?");
-  while(match===""){
-    var match = prompt("Make sure to enter a result!");
-  }
-  if(match==="win"){
-    var results = win(match);
-  } else if(match==="draw"){
-    var results = draw(match);
-  } else{
-    var results = loss(match);
-  }
-  console.log(results);
-  var newResult = results + results;
-  console.log(newResult);
-}
-/*
-if(match1==="win"){
-  var results = win(match1);
-} else if(match1==="draw"){
-  var results = draw(match1);
-} else{
-  var results = loss(match1);
-}
-console.log(results);
+/********
+Team One!
+********/
+var teamOnePoints = 0;
 
-if(match2==="win"){
-  var results = win(match2);
-} else if(match2==="draw"){
-  var results = draw(match2);
-} else{
-  var results = loss(match2);
+for(var i = 0; i < 3; i++){
+var team1 = prompt("Did team "+team1Name+" win, draw, or lose the match?");
+while(team1===""){
+  var team1 = prompt("Make sure to enter a result!");
 }
 
-results += results;
-console.log(results);
+if(team1 === "win"){
+  var points = 3;
+}  else if(team1 === "draw"){
+  var points = 1;
+}  else{
+  var points = 0;
+}
+console.log(points);
+teamOnePoints += points;
 
-if(match3==="win"){
-  var results = win(match3);
-} else if(match3==="draw"){
-  var results = draw(match3);
-} else{
-  var results = loss(match3);
+}
+console.log(teamOnePoints);
+
+/********
+Team Two!
+********/
+var teamTwoPoints = 0;
+
+for(var i = 0; i < 3; i++){
+var team2 = prompt("Did the team win, draw, or lose the match?");
+while(team2===""){
+  var team2 = prompt("Make sure to enter a result!");
 }
 
-results += results;
-console.log(results);
-*/
+if(team2 === "win"){
+  var points = 3;
+}  else if(team2 === "draw"){
+  var points = 1;
+}  else{
+  var points = 0;
+}
+console.log(points);
+teamTwoPoints += points;
+
+}
+console.log(teamTwoPoints);
+
+/**********
+Team Three!
+**********/
+var teamThreePoints = 0;
+
+for(var i = 0; i < 3; i++){
+var team3 = prompt("Did the team win, draw, or lose the match?");
+while(team3===""){
+  var team3 = prompt("Make sure to enter a result!");
+}
+
+if(team3 === "win"){
+  var points = 3;
+}  else if(team3 === "draw"){
+  var points = 1;
+}  else{
+  var points = 0;
+}
+console.log(points);
+teamThreePoints += points;
+
+}
+console.log(teamThreePoints);
+
+/*********
+Team Four!
+*********/
+var teamFourPoints = 0;
+
+for(var i = 0; i < 3; i++){
+var team4 = prompt("Did the team win, draw, or lose the match?");
+while(team4===""){
+  var team4 = prompt("Make sure to enter a result!");
+}
+
+if(team4 === "win"){
+  var points = 3;
+}  else if(team4 === "draw"){
+  var points = 1;
+}  else{
+  var points = 0;
+}
+console.log(points);
+teamFourPoints += points;
+
+}
+console.log(teamFourPoints);
